@@ -13,7 +13,7 @@ const Blogdetails = () => {
     const data = blogs?.filter((blog)=>blog._id === id )
     const handleDelete= async()=>{
         if(!user)return
-        const response = await fetch("/api/blogs/" + id , {
+        const response = await fetch("https://blogging-6x9j.onrender.com/api/blogs/" + id , {
             method:"DELETE",
             headers:{
                 Authorization:`Bearer ${user.token}`

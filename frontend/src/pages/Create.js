@@ -23,7 +23,7 @@ const Create = () => {
             return
         }
         const blog = { author, title, content,user_id};
-        const response = await fetch("/api/blogs", {
+        const response = await fetch("https://blogging-6x9j.onrender.com/api/blogs", {
             method: "POST",
             body: JSON.stringify(blog),
             headers: {
