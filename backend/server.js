@@ -17,7 +17,7 @@ app.use("/api/blogs" , routes);
  app.use("/api/user", userRoutes);
 mongoose.connect(process.env.MONG_URI)
     .then(()=>{
-        app.listen(process.env.PORT, () => { console.log("Database is connected & Server is running") });
+        app.listen(process.env.PORT || 3000, () => { console.log("Database is connected & Server is running") });
     })
     .catch(e=>{console.log(e)});
 

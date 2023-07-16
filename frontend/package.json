@@ -1,5 +1,5 @@
 {
-  "proxy": "https://blogging-2.onrender.com/",
+  "proxy": "http://localhost:3005",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
