@@ -18,7 +18,8 @@ const BlogList = ({blogs}) => {
                             overflow: 'hidden',
                             my: 2,
                             p: 1,
-                            fontSize: '1.5rem',
+                            mt:0,
+                            fontSize: '1.1rem',
                             fontWeight: '500',
                         }}
                     >

@@ -14,7 +14,7 @@ const Login = () => {
         await login(email, password);    
     }
     return (
-      <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}mt="40px" justifyContent="center">
+      <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />} justifyContent="center">
         <form className="login" onSubmit={handleSubmit}>
           <h1 style={{ textAlign: "center", color:"#525FE1" , fontWeight:"400" }}> Login</h1>
             <label>Email :</label>
@@ -26,7 +26,7 @@ const Login = () => {
             {error && <div className="error">{error}</div>}
         </form>
         <ToastContainer theme="dark" />
-        <img src={LoginIcon} alt="login" height="460px" width="500px" className="login-img"></img>
+        <img src={LoginIcon} alt="login" height="460px" width="450px" className="login-img"></img>
       </Stack>
   
     );

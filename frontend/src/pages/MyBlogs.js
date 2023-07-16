@@ -8,7 +8,7 @@ const MyBlogs = () => {
     const data = fetchData();
     const blogs = user_id ? data?.filter((blog) => blog.user_id === user_id) : data;
     return (
-        <div className="myBlogs" style={{ minHeight: "402px" }}>
+        <div className="myBlogs" style={{ minHeight: "450px" }}>
             {!user && 
             <div className="no-user">
                 <h3>Oops!!</h3> You are not logged in.<br/><Link to="/login">Log in</Link> to see your blogs.

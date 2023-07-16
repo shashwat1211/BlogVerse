@@ -31,19 +31,22 @@ const Blogdetails = () => {
         
     }
     return (
+        <>
         <div className="blog-detail">
         {data?.map((blog)=>(
         <div key={blog._id}>
-            <h3 style={{ textAlign: "center", fontFamily: "Poppins", fontWeight: "400", fontSize: "1.6rem", color:"#525FE1"}}>{blog.title}</h3>
-            <p>{blog.content}</p>
+            <h3 style={{ textAlign: "center", fontFamily: "Poppins", fontWeight: "400", fontSize: "1.3em", color:"#525FE1",marginTop:"0px"}}>{blog.title}</h3>
+            <p style={{fontSize:"18px"}}>{blog.content}</p>
             <div style={{display:"flex" , justifyContent:"space-between"}}>
-                <p style={{marginTop:"20px"}}> <em>Written by </em>{blog.author}</p>
+                <p style={{marginTop:"16px"}}> <em>Written by </em>{blog.author}</p>
                 {user && blog.user_id === user.email &&  <span className="material-symbols-outlined" style={{cursor:"pointer"}} onClick={handleDelete}>delete</span>}
             </div>
             <ToastContainer theme={"dark"} />
         </div>
         ))}
+        
         </div>
+        </>
     );
 }
 

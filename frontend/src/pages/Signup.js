@@ -17,7 +17,7 @@ const Signup = () => {
         
     }
     return ( 
-        <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />} mt="40px" justifyContent="center">
+        <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />} justifyContent="center">
         <form  className="signup" onSubmit={handleSubmit}>
             <h1 style={{ textAlign: "center", color: "#525FE1", fontWeight: "400",marginTop:"0px" }}>Sign up</h1>
             <label>Name :</label>
