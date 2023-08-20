@@ -7,19 +7,19 @@ const router = express.Router()
  //router.use(requireAuth)
 
 
-//Get all contacts
+//Get all blogs
 router.get("/" , getBlogs);
 
-//Get a single contact
+//Get a single blog
 router.get("/:id", getBlog)
 
-//Post a contact
+//Post a blog
 router.post("/" ,createBlog )
 
-//DELETe a contact
+//Delete a blog
 router.delete("/:id", deleteBlog)
 
-//update a contact
+//update a blog
 router.patch("/:id", updateBlog)
 
 module.exports = router 

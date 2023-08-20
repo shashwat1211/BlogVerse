@@ -19,19 +19,20 @@ const Signup = () => {
     return ( 
         <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />} justifyContent="center">
         <form  className="signup" onSubmit={handleSubmit}>
-            <h1 style={{ textAlign: "center", color: "#525FE1", fontWeight: "400",marginTop:"0px" }}>Sign up</h1>
-            <label>Name :</label>
-            <input type="text" onChange={(e) => { setUsername(e.target.value)}} value={username} />
-            <label>Email :</label>
-            <input type="email" onChange={(e)=>{setEmail(e.target.value)}} value={email} />
-            <label>Password :</label>
-            <input type="password" onChange={(e) => { setPassword(e.target.value) }} value={password} />
+            <h2 style={{ textAlign: "center", color: "#525FE1", fontWeight: "500",marginTop:"2px" }}>Sign up</h2>
+            {/* <label>Name :</label> */}
+            <input type="text" onChange={(e) => { setUsername(e.target.value)}} value={username} placeholder="Name" />
+            {/* <label>Email :</label> */}
+            <input type="email" onChange={(e)=>{setEmail(e.target.value)}} value={email} placeholder="Email id"/>
+            {/* <label>Password :</label> */}
+            <input type="password" onChange={(e) => { setPassword(e.target.value) }} value={password} placeholder="Password" />
+                <p style={{ fontSize: "10px" }}>*password must contain atleast one capital letter, small letter, number and symbol and length should be greater than 8.</p>
             <button className="btn" disabled={isPending}><h1>Sign up</h1></button>
-            <p style={{ marginTop: "8px", textAlign: "center" }}>Already have a account? <br />{<Link to="/login">Log in</Link>} now!!</p>
+                <p style={{ marginTop: "8px", textAlign: "center" }}>Already have an account? <br />{<Link to="/login" style={{ color:"rgb(110, 78, 217)" }}>Log in</Link>} now!!</p>
             {error && <div className="error">{error}</div> }
         </form>
         <ToastContainer theme="dark"/>
-        <img src={SignupIcon} alt="signup" height="520px" width="500px" className="login-img"></img>
+        <img src={SignupIcon} alt="signup" height="435px" width="435px" className="login-img"></img>
         </Stack>
      );
 }

@@ -18,10 +18,10 @@ const SearchBar = () => {
                 style={BarStyle}
                 key="search-bar"
                 value={search}
-                placeholder={"search news"}
+                placeholder={"search blogs"}
                 onChange={(e)=>{setSearch(e.target.value)}}
             />
-            <button onClick={handleSearch} className="searchbtn">Search</button>
+            <button onClick={handleSearch} className="searchbtn" style={{marginRight:"23px"}}>Search</button>
         </div>
     );
 };

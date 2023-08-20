@@ -35,7 +35,7 @@ const Blogdetails = () => {
         <div className="blog-detail">
         {data?.map((blog)=>(
         <div key={blog._id}>
-            <h3 style={{ textAlign: "center", fontFamily: "Poppins", fontWeight: "400", fontSize: "1.3em", color:"#525FE1",marginTop:"0px"}}>{blog.title}</h3>
+            <h3 style={{ textAlign: "center", fontFamily: "Poppins", fontWeight: "500", fontSize: "1.3em", color:"#525FE1",marginTop:"0px"}}>{blog.title}</h3>
             <p style={{fontSize:"18px"}}>{blog.content}</p>
             <div style={{display:"flex" , justifyContent:"space-between"}}>
                 <p style={{marginTop:"16px"}}> <em>Written by </em>{blog.author}</p>

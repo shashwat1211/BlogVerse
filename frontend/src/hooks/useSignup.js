@@ -21,7 +21,7 @@ export const useSignup = () => {
         if (!response.ok) {
             setError(json.error)
             setIsPending(false);
-            toast.error("Sign up failed")
+            toast.error(error)
         }
         if (response.ok) {
             localStorage.setItem("user", JSON.stringify(json))

@@ -10,8 +10,8 @@ const MyBlogs = () => {
     return (
         <div className="myBlogs" style={{ minHeight: "450px" }}>
             {!user && 
-            <div className="no-user">
-                <h3>Oops!!</h3> You are not logged in.<br/><Link to="/login">Log in</Link> to see your blogs.
+            <div className="no-user" >
+                    <h3>Oops!!</h3> You are not logged in.<br /><Link to="/login" style={{ color: "rgb(110, 78, 217)" }}>Log in</Link> to see your blogs.
             </div> }
             {user &&
             <div className="blogs">

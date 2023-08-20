@@ -56,8 +56,8 @@ const Create = () => {
         {!user && (
                 <div className="no-user" style={{ minHeight: "444px" }}>
                 <h3>Oops!!</h3> 
-                You are not logged in.<Link to="/login">Log in</Link> to write a blog.<br />
-                Or <Link to="/signup">Sign up</Link> to create a account.
+                    You are not logged in.<Link to="/login" style={{ color: "rgb(110, 78, 217)" }}>Log in</Link> to write a blog.<br />
+                    Or <Link to="/signup" style={{ color: "rgb(110, 78, 217)" }}>Sign up</Link> to create a account.
                 
             </div>
         )}
@@ -75,7 +75,7 @@ const Create = () => {
                     placeholder="Share your ideas here!!"
                     rows={10}
                     cols={100}
-                    style={{width:"40vw" , height:"10vw" , border:"1.5px , solid" , fontSize:"1.1rem"}}
+                    style={{width:"40vw" , height:"10vw" , border:"1.5px  solid",padding:"5px" , fontSize:"1.1rem"}}
                 />
             </div>
             <div className="author">
