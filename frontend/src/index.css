@@ -378,3 +378,29 @@ header .links a:hover:before {
   right:0;
 
 }
+/* bg-blue-500 h-screen w-screen grid grid-flow-col grid-cols-6 p-0 fixed */
+.landing{
+  background-color: #e1e7ee;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Poppins";
+}
+.landing img{
+  height: 100vh;
+  right: 0;
+}
+.landing .text{
+  width: 50vh;
+  margin: 100px;
+}
+.landing button{
+  width: 200px;
+  height: 40px;
+  background-color: rgb(110, 78, 217);
+  border-radius: 6%;
+  color: white;
+  font-size: 18px;
+}

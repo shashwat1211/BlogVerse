@@ -1,11 +1,12 @@
 
 import { formatDistance } from "date-fns"
 import { Box } from "@mui/material"
-
+import Loader from "../components/Loader"
 import {Link} from "react-router-dom"
 const BlogList = ({blogs}) => {
     return ( 
         <div className="blog-list">
+           {!blogs && <Loader/>}
             {blogs?.map((blog) => (
                 <div className="blog-details" key={blog._id} style= {{whiteSpace: 'nowrap' }}>
                     <Link to={`/blogs/${blog._id}`}  >

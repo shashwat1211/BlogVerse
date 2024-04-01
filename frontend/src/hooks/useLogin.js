@@ -31,9 +31,6 @@ export const useLogin = () => {
             setTimeout(() => {
                 navigate("/")
             }, 1200);
-            
-            
-
         }
         
     }

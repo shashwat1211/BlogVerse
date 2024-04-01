@@ -33,6 +33,7 @@ const Blogdetails = () => {
     return (
         <>
         <div className="blog-detail">
+        
         {data?.map((blog)=>(
         <div key={blog._id}>
             <h3 style={{ textAlign: "center", fontFamily: "Poppins", fontWeight: "500", fontSize: "1.3em", color:"#525FE1",marginTop:"0px"}}>{blog.title}</h3>
